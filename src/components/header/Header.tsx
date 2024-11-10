@@ -18,8 +18,6 @@ export function Header() {
     } else {
       navAnimation.start("top");
     }
-
-    console.log("latest", latest);
   });
 
   return (
