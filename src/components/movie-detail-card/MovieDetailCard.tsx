@@ -12,14 +12,15 @@ import {
 
 export interface MovieDetailCardProps {
   data: IGetMoviesResult;
+  returnPath: string;
 }
 
-export function MovieDetailCard({ data }: MovieDetailCardProps) {
+export function MovieDetailCard({ data, returnPath }: MovieDetailCardProps) {
   const navigate = useNavigate();
   const { scrollY } = useScroll();
   const { movieId } = useParams();
 
-  const onOverlayClick = () => navigate("/");
+  const onOverlayClick = () => navigate(returnPath);
   const clickedMovie =
     movieId && data?.results.find((movie) => movie.id === +movieId);
 

@@ -11,6 +11,6 @@ function NowPlaying() {
 
   if (isLoading || !data) return <Loader />;
 
-  return <MoviesLayout data={data} />;
+  return <MoviesLayout data={data} returnPath="now-playing" />;
 }
 export default NowPlaying;
