@@ -1,7 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
 import { AnimatePresence, useScroll } from "framer-motion";
-import { getDetailMovie, IGetMoviesResult } from "../../api";
+import { IGetMoviesResult } from "../../api";
 import { makeImagePath } from "../../utils";
 import {
   BigCover,
