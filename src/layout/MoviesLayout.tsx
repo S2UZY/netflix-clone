@@ -12,9 +12,9 @@ export function MoviesLayout({ data, returnPath }: MoviesLayoutProps) {
     <Wrapper>
       <>
         <Banner
-          bgPhoto={data?.results[0].backdrop_path || ""}
-          title={data?.results[0].title || ""}
-          overview={data?.results[0].overview || ""}
+          bgPhoto={data.results[0].backdrop_path}
+          title={data.results[0].title}
+          overview={data.results[0].overview}
         />
         {data && <MoviesGallery data={data} />}
         {data && <MovieDetailCard data={data} returnPath={returnPath} />}

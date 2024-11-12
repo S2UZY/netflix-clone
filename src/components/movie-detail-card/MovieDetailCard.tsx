@@ -22,7 +22,7 @@ export function MovieDetailCard({ data, returnPath }: MovieDetailCardProps) {
 
   const onOverlayClick = () => navigate(returnPath);
   const clickedMovie =
-    movieId && data?.results.find((movie) => movie.id === +movieId);
+    movieId && data.results.find((movie) => movie.id === +movieId);
 
   return (
     <AnimatePresence>

@@ -34,7 +34,7 @@ export function MoviesGallery({ data }: MoviesGalleryProps) {
           initial="hidden"
           animate="visible"
         >
-          {data?.results.map((movie, index) => (
+          {data.results.map((movie, index) => (
             <MovieCard
               key={movie.id}
               layoutId={movie.id + ""}
